@@ -24,7 +24,7 @@ class _CounterComponentState extends State<CounterComponent> {
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: AppColors.counterButtonColor),
+            color: AppColors.counterButtonColor),
             child: const Icon(Icons.arrow_drop_up),
           ),
         ),
@@ -39,7 +39,7 @@ class _CounterComponentState extends State<CounterComponent> {
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: AppColors.counterButtonColor),
+            color: AppColors.counterButtonColor),
             child: const Icon(Icons.arrow_drop_down),
           ),
         ),
@@ -47,3 +47,4 @@ class _CounterComponentState extends State<CounterComponent> {
     );
   }
 }
+

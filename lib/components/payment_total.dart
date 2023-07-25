@@ -45,9 +45,9 @@ class PaymentTotal extends StatelessWidget {
         ElevatedButton(
           onPressed: () {},
           style: AppColors.buttonStyle,
-          child: const Row(
+          child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
+              children: const <Widget>[
                 Padding(
                   padding: EdgeInsets.only(right: 8.0),
                   child: Icon(Icons.account_balance_wallet),
