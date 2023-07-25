@@ -30,46 +30,54 @@ class MainDrawer extends StatelessWidget {
           ListTile(
             iconColor: AppColors.drawerIconColor,
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                return const Home();
-              })));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: ((context) {
+                    return const Home();
+                  }),
+                ),
+              );
             },
             title: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Icon(Icons.receipt_long),
-                  Expanded(
-                      child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Text(
-                      "Pedido Atual",
-                      style: TextStyle(fontWeight: FontWeight.w700),
-                    ),
-                  )),
-                  Text(
-                    "100+",
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Icon(Icons.receipt_long),
+                Expanded(
+                    child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(
+                    "Pedido Atual",
                     style: TextStyle(fontWeight: FontWeight.w700),
-                  )
-                ]),
+                  ),
+                )),
+                Text(
+                  "100+",
+                  style: TextStyle(fontWeight: FontWeight.w700),
+                )
+              ],
+            ),
           ),
           ListTile(
             iconColor: AppColors.drawerIconColor,
             textColor: AppColors.drawerFontColor,
             onTap: () {},
             title: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Icon(Icons.fact_check_outlined),
-                  Expanded(
-                      child: Padding(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Icon(Icons.fact_check_outlined),
+                Expanded(
+                  child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text(
                       "Todos os pedidos",
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
-                  )),
-                ]),
-          )
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
